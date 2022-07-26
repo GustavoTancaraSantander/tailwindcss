@@ -9,7 +9,7 @@
 	<title>Grid v1</title>
 </head>
 
-<body class="container mx-auto mt-5 text-center">
+<body class="container mx-auto mt-5 text-center bg-blue-900">
 	<div class="grid grid-cols-3 gap-3">
 		<div class="bg-red-400">A</div>
 		<div class="bg-red-400">A</div>
@@ -24,6 +24,32 @@
 		<div class="bg-green-400">A</div>
 		<div class="bg-green-400">A</div>
 		<div class="bg-green-400">A</div>
+	</div>
+
+	<h2 class="text-white text-2xl mt-5">Custom colums (col-span)</h2>
+	<div class="grid grid-cols-4 gap-2 my-2">
+		<div class="bg-blue-400 col-span-2">C</div>
+		<div class="bg-blue-400">C</div>
+		<div class="bg-blue-400">C</div>
+		<div class="bg-blue-400 col-span-4">C</div>
+	</div>
+
+	<h2 class="text-white text-2xl mt-5">Custom colums (col-start & col-end)</h2>
+	<div class="grid grid-cols-4 gap-2 my-2">
+		<div class="bg-orange-400 col-start-2">C1</div>
+		<div class="bg-orange-400">C2</div>
+		<div class="bg-orange-400">C3</div>
+
+		<div class="bg-orange-400 col-end-5">col-end-5</div>
+		<div class="bg-orange-400 col-end-4">col-end-4</div>
+		<div class="bg-orange-400 col-end-3">col-end-3</div>
+		<div class="bg-orange-400 col-end-2">col-end-2</div>
+		<!-- <div class="bg-orange-400 col-end-1">C8</div> -->
+		<!-- <div class="bg-orange-400 col-start-5">C4</div> -->
+		<div class="bg-orange-400 col-start-4">col-start-4</div>
+		<div class="bg-orange-400 col-start-3">col-start-3</div>
+		<div class="bg-orange-400 col-start-2">col-start-2</div>
+		<div class="bg-orange-400 col-start-1">col-start-1</div>
 	</div>
 </body>
 
