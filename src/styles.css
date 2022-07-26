@@ -1,5 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&display=swap");
+/* Removed warning -> https://flaviocopes.com/fix-unknown-at-rule-tailwind/ */
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
+
+/* font-semibold  text-white bg-green-500 bg-opacity-75 hover:bg-green-700 */
+
+.btn {
+	@apply py-2 px-4 rounded-lg font-vicwant font-semibold;
+}
+
+.btn-primary {
+	@apply bg-primary-900 text-white;
+}
+
+.btn-primary:hover {
+	@apply bg-primary-800 text-primary-300 font-bold;
+}
