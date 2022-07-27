@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="output.css" rel="stylesheet">
+	<title>Flexbox tailwindcss</title>
+</head>
+
+<body class="container mx-auto mt-5 bg-primary-900">
+	<h1 class="text-white text-2xl">Flexbox tailwindcss</h1>
+	<a class="text-gray-600" target="_blank"
+		href="https://v1.tailwindcss.com/docs/flex-direction">https://v1.tailwindcss.com/docs/flex-direction</a>
+	<a class="text-gray-600" target="_blank"
+		href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>
+	<h2 class="text-blue-400">Flexbox default</h2>
+	<span class="text-gray-600">justify-start (default)</span>
+	<div class="flex flex-row">
+		<div class="bg-orange-400 m-2 p-4">1</div>
+		<div class="bg-orange-400 m-2 p-4">2</div>
+		<div class="bg-orange-400 m-2 p-4">3</div>
+	</div>
+
+	<h2 class="text-blue-400">Flexbox Reverse</h2>
+	<span class="text-gray-600">justify-end (default)</span>
+	<div class="flex flex-row-reverse">
+		<div class="bg-orange-400 m-2 p-4">1</div>
+		<div class="bg-orange-400 m-2 p-4">2</div>
+		<div class="bg-orange-400 m-2 p-4">3</div>
+	</div>
+
+	<h2 class="text-blue-400">Flexbox Wrap (test rezize screen)</h2>
+	<span class="text-gray-600">justify-center</span>
+	<div class="flex flex-wrap justify-center">
+		<div class="bg-orange-400 m-2 p-20">1</div>
+		<div class="bg-orange-400 m-2 p-20">2</div>
+		<div class="bg-orange-400 m-2 p-20">3</div>
+	</div>
+
+	<h2 class="text-blue-400">Flexbox Wrap</h2>
+	<span class="text-gray-600">justify-between</span>
+	<div class="flex flex-wrap justify-between">
+		<div class="bg-orange-400 m-2 p-4">1</div>
+		<div class="bg-orange-400 m-2 p-4">2</div>
+		<div class="bg-orange-400 m-2 p-4">3</div>
+	</div>
+
+	<h2 class="text-blue-400">Align Items</h2>
+	<span class="text-gray-600">justify-between items-end</span>
+	<div class="bg-blue-800 h-32 flex justify-between items-end">
+		<div class="bg-orange-400 m-2 p-4">1</div>
+		<div class="bg-orange-400 m-2 p-4">2</div>
+		<div class="bg-orange-400 m-2 p-4">3</div>
+	</div>
+
+	<h2 class="text-blue-400">Align Content</h2>
+	<span class="text-gray-600">flex flex-wrap content-end (vertical)</span>
+	<div class="bg-blue-800 h-32 flex flex-wrap content-end">
+		<div class="bg-orange-400 m-2 p-4">1</div>
+		<div class="bg-orange-400 m-2 p-4">2</div>
+		<div class="bg-orange-400 m-2 p-4">3</div>
+	</div>
+
+	<h2 class="text-blue-400">Align Self</h2>
+	<span class="text-gray-600">items-end (parent) & self-start (clildren) </span>
+	<div class="bg-blue-800 h-32 flex flex-wrap items-end">
+		<div class="bg-orange-400 m-2 p-4">1</div>
+		<div class="bg-orange-400 m-2 p-4 self-start">2</div>
+		<div class="bg-orange-400 m-2 p-4">3</div>
+	</div>
+
+	<h2 class="text-blue-400">Flex</h2>
+	<span class="text-gray-600">flex-[n], items-start</span>
+	<div class="bg-blue-800 h-32 flex items-start">
+		<div class="bg-orange-400 m-2 p-4">Lorem, ipsum</div>
+		<div class="bg-orange-400 m-2 p-4 flex-1">Lorem ipsum dolor sit ajust content. </div>
+		<div class="bg-orange-400 m-2 p-4">3</div>
+	</div>
+</body>
+
+</html>
