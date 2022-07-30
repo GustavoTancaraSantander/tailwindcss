@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="output.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+	<title>Navbar</title>
+</head>
+
+<body class="bg-primary-900 container mx-auto mt-5">
+	<div id="app">
+		<nav class="bg-teal-500 p-6 flex flex-wrap items-center justify-between">
+			<!-- Logo and TitleApp -->
+			<div class="flex items-center flex-shrink-0 mr-6">
+				<svg class="fill-current h-8 w-8 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33">
+					<g clip-path="url(#prefix__clip0)">
+						<path fill="white" fill-rule="evenodd"
+							d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+							clip-rule="evenodd" />
+					</g>
+					<defs>
+						<clipPath id="prefix__clip0">
+							<path fill="#fff" d="M0 0h54v32.4H0z" />
+						</clipPath>
+					</defs>
+				</svg>
+				<span class="font-semibold text-white text-xl tracking-widest">TitleApp</span>
+			</div>
+			<!-- Menu Icon -->
+			<div class="block lg:hidden">
+				<button @click="isOpen = !isOpen">
+					<svg v-if="isOpen" class="h-6 w-6 fill-current border-none" viewBox="0 0 24 24">
+						<path fill-rule="evenodd"
+							d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+					</svg>
+					<img v-else src="menu-icon.svg" class="fill-current h-10" alt="Kiwi standing on oval">
+				</button>
+			</div>
+			<!-- Menu -->
+			<div :class="isOpen? 'block': 'hidden'" class="lg:flex lg:items-center lg:w-auto w-full px-4 pt-2 pb-2">
+				<a href="#" class="p-2 py-1 text-gray-300 cursor-pointer block hover:bg-teal-600 rounded">Docs</a>
+				<a href="#" class="p-2 py-1 text-gray-300 cursor-pointer block hover:bg-teal-600 rounded">Components</a>
+				<a href="#" class="p-2 py-1 text-gray-300 cursor-pointer block hover:bg-teal-600 rounded">Blog</a>
+				<button class="btn btn-primary mt-4 lg:mt-0 ml-2">Download</button>
+			</div>
+		</nav>
+
+	</div>
+	<script>
+		new Vue({
+			el: '#app',
+			data() {
+				return {
+					message: "vue",
+					isOpen: false
+				}
+			},
+		})
+	</script>
+</body>
+
+</html>
