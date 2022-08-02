@@ -1,5 +1,5 @@
 {
-  "name": "v1.x-cdn",
+  "name": "tailwindcss",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "url": "https://github.com/GustavoTancaraSantander/tailwindcss/issues"
   },
   "homepage": "https://github.com/GustavoTancaraSantander/tailwindcss#readme",
-  "dependencies": {
-    "tailwindcss": "^1.9.6"
+  "devDependencies": {
+    "tailwindcss": "^3.1.7"
   }
 }

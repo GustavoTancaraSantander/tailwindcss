@@ -1,12 +1,21 @@
-const { colors } = require('tailwindcss/defaultTheme')
+/** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
+  // https://tailwindcss.com/docs/upgrade-guide#configure-content-sources
+  // './public/**/*.html' >>> for detected class in files from ./public
+  content: ["./src/**/*.{html,js}", './components/**/*.{html,js}', './public/**/*.html'],
+  // './pages/**/*.{html,js}', './components/**/*.{html,js}', './src/**/*.{js,jsx,ts,tsx,vue}'
   future: {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  // purge: [],
 
   theme: {
+    container: {
+      center: true
+    },
     fontFamily: {
       // display: ['Gilroy', 'sans-serif'],
       vicwant: ['Edu VIC WA NT Beginner'], // name customized

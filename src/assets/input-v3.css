@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* https://tailwindcss.com/docs/configuration */
+@layer base {
+	h1 {
+		@apply text-2xl;
+	}
+	h2 {
+		@apply text-xl;
+	}
+	/* ... */
+}
+@layer utilities {
+	.btn {
+		@apply py-2 px-4 rounded-lg font-vicwant font-semibold;
+	}
+
+	.btn-primary {
+		@apply bg-primary-700 text-white;
+	}
+
+	.btn-primary:hover {
+		@apply bg-primary-800 text-primary-300 font-bold;
+	}
+}
