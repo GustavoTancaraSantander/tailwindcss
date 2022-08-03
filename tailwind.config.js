@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   // https://tailwindcss.com/docs/upgrade-guide#configure-content-sources
@@ -18,6 +19,8 @@ module.exports = {
     },
     fontFamily: {
       // display: ['Gilroy', 'sans-serif'],
+      mono: ['ui-monospace', 'SFMono-Regular'],
+      sans: ['Helvetica', 'Arial', 'sans-serif', ...defaultTheme.fontFamily.sans],
       vicwant: ['Edu VIC WA NT Beginner'], // name customized
     },
     extend: {

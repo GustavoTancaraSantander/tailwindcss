@@ -12,6 +12,9 @@
 		@apply text-xl;
 	}
 	/* ... */
+	html {
+		font-family: Proxima Nova, system-ui, sans-serif;
+	}
 }
 @layer utilities {
 	.btn {
